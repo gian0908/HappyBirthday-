@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 18th Birthday, Shenn! 💗</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Georgia, "Times New Roman", serif;
+        background:
+            radial-gradient(circle at 15% 20%, rgba(255,255,255,.75) 0 2px, transparent 3px),
+            radial-gradient(circle at 80% 15%, rgba(255,255,255,.65) 0 2px, transparent 3px),
+            linear-gradient(135deg, #ffd6e7, #f9c6d9, #e9d5ff);
+        background-size: 120px 120px, 160px 160px, cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 18px;
+        color: #513344;
+        overflow-x: hidden;
+    }
+
+    .heart {
+        position: fixed;
+        color: rgba(255,255,255,.7);
+        font-size: 22px;
+        animation: float 7s ease-in-out infinite;
+        pointer-events: none;
+    }
+
+    .h1 { left: 8%; top: 12%; animation-delay: 0s; }
+    .h2 { right: 9%; top: 25%; animation-delay: 2s; font-size: 28px; }
+    .h3 { left: 16%; bottom: 12%; animation-delay: 4s; font-size: 18px; }
+    .h4 { right: 17%; bottom: 9%; animation-delay: 1s; }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0) rotate(-8deg); opacity: .45; }
+        50% { transform: translateY(-22px) rotate(8deg); opacity: .9; }
+    }
+
+    .card {
+        width: min(760px, 100%);
+        background: rgba(255, 250, 253, 0.94);
+        border: 2px solid rgba(255,255,255,.85);
+        border-radius: 28px;
+        padding: 48px 55px;
+        box-shadow: 0 20px 55px rgba(102, 55, 87, .22);
+        position: relative;
+        overflow: hidden;
+        animation: appear 1s ease;
+    }
+
+    @keyframes appear {
+        from { opacity: 0; transform: translateY(25px) scale(.98); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .card::before,
+    .card::after {
+        content: "✦";
+        position: absolute;
+        color: #eaa0bd;
+        font-size: 35px;
+    }
+
+    .card::before { top: 18px; left: 24px; }
+    .card::after { bottom: 18px; right: 24px; }
+
+    .top {
+        text-align: center;
+        margin-bottom: 28px;
+    }
+
+    .small {
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 12px;
+        color: #bd6f91;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: clamp(34px, 7vw, 58px);
+        color: #a94d78;
+        line-height: 1.1;
+    }
+
+    .subtitle {
+        margin-top: 12px;
+        font-size: 18px;
+        color: #7d5268;
+        font-style: italic;
+    }
+
+    .divider {
+        width: 90px;
+        height: 3px;
+        background: #e9a5bf;
+        margin: 25px auto 30px;
+        border-radius: 10px;
+    }
+
+    .letter {
+        font-size: 18px;
+        line-height: 1.85;
+        text-align: left;
+    }
+
+    .greeting {
+        font-size: 24px;
+        font-weight: bold;
+        color: #a94d78;
+        margin-bottom: 18px;
+    }
+
+    .letter p {
+        margin: 0 0 18px;
+    }
+
+    .closing {
+        margin-top: 28px;
+        text-align: right;
+        font-size: 19px;
+        line-height: 1.7;
+    }
+
+    .signature {
+        font-size: 27px;
+        color: #a94d78;
+        font-style: italic;
+    }
+
+    .cake {
+        font-size: 42px;
+        margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+        .card {
+            padding: 38px 25px;
+            border-radius: 22px;
+        }
+
+        .letter {
+            font-size: 16px;
+            line-height: 1.75;
+        }
+
+        .greeting {
+            font-size: 21px;
+        }
+
+        .closing {
+            font-size: 17px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="heart h1">♡</div>
+<div class="heart h2">♥</div>
+<div class="heart h3">♡</div>
+<div class="heart h4">♥</div>
+
+<main class="card">
+    <div class="top">
+        <div class="small">A little birthday letter</div>
+        <h1>Happy 18th, Shenn! 💗</h1>
+        <div class="subtitle">A special day for a special person</div>
+        <div class="cake">🎂</div>
+        <div class="divider"></div>
+    </div>
+
+    <section class="letter">
+        <div class="greeting">Hi Shenn!</div>
+
+        <p>Happiest 18th birthday po!! May this new chapter of your life be filled with beautiful journeys and experiences that will help you grow into the person you aspire to be.</p>
+
+        <p>May your wishes and goals come true, and may they continue to guide and inspire you throughout the journeys ahead. This day is truly one of the most special days in your life, and I hope you get to enjoy and cherish every moment of it to the fullest.</p>
+
+        <p>May this year be kind to you po, and may it bring you lots of happiness, wonderful memories, and new experiences! And of course, more and more birthdays to come po Shenn!!</p>
+
+        <p>Always take care of yourself, enjoy your day, and make the most out of this new chapter of your life!!</p>
+    </section>
+
+    <div class="closing">
+        With warmest wishes,<br>
+        <span class="signature">From: Gian ♡</span>
+    </div>
+</main>
+
+</body>
+</html>
